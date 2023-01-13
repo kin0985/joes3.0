@@ -4,8 +4,12 @@
     line-height: 80px; 
     background: #dedede;
     text-align: center;
+    text-align: left;
+    text-align: right;
+    text-align: justify;
     margin: auto;
     border: 2px solid red;
     padding: 10px;
     box-sizing: border-box;
+    word-break: break-all;
 }
