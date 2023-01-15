@@ -2,7 +2,9 @@
     width: 100px;
     height: 100px; 
     line-height: 80px; 
-    background: #dedede;
+    background-color: #dd4a4a;
+    background-size: cover;
+    background-image: url(../images/dog2.jpeg);
     text-align: center;
     text-align: left;
     text-align: right;
@@ -12,4 +14,8 @@
     padding: 10px;
     box-sizing: border-box;
     word-break: break-all;
+    color:rgb(50, 155, 134);
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Alfa Slab One', cursive;
 }
