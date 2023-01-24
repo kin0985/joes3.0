@@ -1,0 +1,42 @@
+*,
+*::after,
+*::before {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.block {
+    width: 800px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cube {
+    width: 100px;
+    height: 100px;
+    border: 1px solid#000;
+}
+
+.static {
+    background: rgb(132, 130, 130);
+    position: static;  
+}
+
+.relative {
+    background: rgb(207, 123, 123);
+    position: relative;      
+}
+
+.absolute {
+    background: rgb(145, 227, 82);
+    position: absolute;
+    z-index:2;
+ 
+}
+
+.fixed {
+    background: rgb(24, 48, 179);
+    position: fixed;  
+}
