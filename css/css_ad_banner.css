@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.fn {
+    text-align: center;
+}
+.button {
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 0;
+    background: rgb(231, 32, 59);
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: rgb(170, 24, 43);;
+
+}
+
+.ad-component {
+    position: fixed;
+    top: 0;
+    /* left: 50%; */
+    /* margin-left: -300px; */
+    left: calc(50% - 300px);
+    width: 600px;
+    height: 600px;
+    background: red;
+
+}

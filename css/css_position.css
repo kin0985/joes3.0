@@ -7,10 +7,12 @@
 }
 
 .block {
-    width: 800px;
+    width: 300px;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+    background: green;
+    position: relative;
 }
 
 .cube {
@@ -33,10 +35,16 @@
     background: rgb(145, 227, 82);
     position: absolute;
     z-index:2;
+    top: 20px;
+    left: 20px;
  
 }
 
 .fixed {
     background: rgb(24, 48, 179);
     position: fixed;  
+    top: 40px;
+    bottom: 100px;
+    left: 20px;
+ 
 }
