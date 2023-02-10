@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.hover-demo {
+  width: 80%;
+  height: 100px;
+  background: red;
+  color: yellow;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+.hover-demo:hover {
+  background: blue;
+  color: #fff;
+}/*# sourceMappingURL=css_pseudo.css.map */
