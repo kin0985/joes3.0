@@ -30,7 +30,7 @@
   color: #fff;
   padding: 12px;
   font-size: 26px;
-  font-size: 700;
+  font-weight: 700;
   font-family: monospace;
   cursor: pointer;
   -webkit-user-select: none;
@@ -45,5 +45,10 @@
 
 .accrodion .tab .tab-content {
   padding: 10px;
+  display: none;
+}
+
+.accrodion .tab > input:checked + .tab-content {
+  display: block;
 }
 /*# sourceMappingURL=acrodion.css.map */
