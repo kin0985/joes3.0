@@ -3,7 +3,8 @@
 *::before {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 16px;
 }
 
@@ -16,8 +17,9 @@
 .say-hi {
   padding: 10px;
 }
+
 .say-hi::before {
-  content: "David";
+  content: 'David';
   color: red;
   font: size 20px;
   width: 200px;
@@ -25,7 +27,9 @@
   background: yellow;
   display: inline-block;
 }
+
 .say-hi::after {
-  content: "Afterrrrr";
+  content: 'Afterrrrr';
   color: blue;
-}/*# sourceMappingURL=css_pseduo_el.css.map */
+}
+/*# sourceMappingURL=css_pseduo_el.css.map */
