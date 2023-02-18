@@ -22,7 +22,7 @@
   border: 1px solid #0c4df1;
 }
 
-.accrodion .tab label {
+.accrodion .tab > label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
