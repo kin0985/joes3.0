@@ -11,14 +11,19 @@
             background: rgb(30, 0, 255);
             color: #fff;
             padding: 12px;
-            font-size: 26px;
             font-weight: 700;
             font-family: monospace;
             cursor: pointer;
             user-select: none;
+            justify-content: space-between;
+            align-items: center;
 
             &:hover {
                 background: #13f165;
+            }
+
+            .close-icon{
+                display: none;
             }
         }
 

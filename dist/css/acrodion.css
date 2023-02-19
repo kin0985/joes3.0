@@ -29,7 +29,6 @@
   background: #1e00ff;
   color: #fff;
   padding: 12px;
-  font-size: 26px;
   font-weight: 700;
   font-family: monospace;
   cursor: pointer;
@@ -37,10 +36,20 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .accrodion .tab > label:hover {
   background: #13f165;
+}
+
+.accrodion .tab > label .close-icon {
+  display: none;
 }
 
 .accrodion .tab .tab-content {
