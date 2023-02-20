@@ -19,7 +19,12 @@
 }
 
 .accrodion .tab {
-  border: 1px solid #0c4df1;
+  border: 3px solid #e53313;
+  border-bottom-width: 0;
+}
+
+.accrodion .tab:last-child {
+  border-bottom-width: 3px;
 }
 
 .accrodion .tab > label {

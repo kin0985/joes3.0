@@ -4,7 +4,12 @@
     margin: 20px auto;
 
     .tab {
-        border: 1px solid rgb(12, 77, 241);
+        border: 3px solid rgb(229, 51, 19);
+        border-bottom-width: 0;
+
+        &:last-child {
+            border-bottom-width: 3px;
+        }
 
         >label {
             display: flex;
