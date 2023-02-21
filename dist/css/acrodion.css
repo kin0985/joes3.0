@@ -62,6 +62,10 @@
   display: none;
 }
 
+.accrodion .tab > input:checked + label {
+  background: #13f165;
+}
+
 .accrodion .tab > input:checked + label .open-icon {
   display: none;
 }

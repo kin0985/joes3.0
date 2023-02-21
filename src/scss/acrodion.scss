@@ -39,9 +39,11 @@
 
         >input:checked {
             +label {
-                 .open-icon {
+                background: #13f165;
+
+                .open-icon {
                         display: none;
-                    }
+                }
         
                 .close-icon {
                         display: block;
