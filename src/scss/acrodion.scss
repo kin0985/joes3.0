@@ -37,7 +37,7 @@
             display: none;
         }
 
-        >input:checked {
+        .tab-switch:checked {
             +label {
                 background: #13f165;
 
@@ -55,7 +55,15 @@
                  }
             }
 
-            >input {
+            /**
+            *   屬性選擇器解決方案
+            **/
+            // >input[type=radio],
+            // >input[type=checkbox]{
+            //     display: none;
+            // }
+
+            .tab-switch { 
                 display: none;
             }
         }

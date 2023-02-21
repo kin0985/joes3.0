@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::after,
 *::before {
@@ -21,6 +22,9 @@
 .accrodion .tab {
   border: 3px solid #e53313;
   border-bottom-width: 0;
+  /**
+            *   屬性選擇器解決方案
+            **/
 }
 
 .accrodion .tab:last-child {
@@ -62,23 +66,23 @@
   display: none;
 }
 
-.accrodion .tab > input:checked + label {
+.accrodion .tab .tab-switch:checked + label {
   background: #13f165;
 }
 
-.accrodion .tab > input:checked + label .open-icon {
+.accrodion .tab .tab-switch:checked + label .open-icon {
   display: none;
 }
 
-.accrodion .tab > input:checked + label .close-icon {
+.accrodion .tab .tab-switch:checked + label .close-icon {
   display: block;
 }
 
-.accrodion .tab > input:checked ~ .tab-content {
+.accrodion .tab .tab-switch:checked ~ .tab-content {
   display: block;
 }
 
-.accrodion .tab > input {
+.accrodion .tab .tab-switch {
   display: none;
 }
 /*# sourceMappingURL=acrodion.css.map */
