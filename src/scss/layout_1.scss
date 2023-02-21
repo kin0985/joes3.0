@@ -1,0 +1,41 @@
+@import 'reset';
+
+body{
+    background: #000;
+}
+
+.header,
+.header2,
+.header3,
+.header4 {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header2 {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+}
+
+.header3 {
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+}
+
+.header4 {
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
