@@ -18,8 +18,30 @@ body{
         list-style-type: none;
         display: flex;
 
-        li {
-            margin-left: 10px;
-         }
+        // li {
+        //     margin-left: 10px;
+
+        //     &:last-child {
+        //         margin-right: 0;
+        //     }
+        //  }
+    }
+
+    li {
+        margin-left: 10px;
+        font-weight: 700;
+        text-align: center;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:hover {
+            color: blue;
+        }
+
+        .en {
+            font-size: 14px;
+        }
     }
 }

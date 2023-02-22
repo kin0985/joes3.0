@@ -47,7 +47,21 @@ body {
   display: flex;
 }
 
-.header .menu li {
+.header li {
   margin-left: 10px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.header li:first-child {
+  margin-left: 0;
+}
+
+.header li:hover {
+  color: blue;
+}
+
+.header li .en {
+  font-size: 14px;
 }
 /*# sourceMappingURL=layout_1.css.map */
