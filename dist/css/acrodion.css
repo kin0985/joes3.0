@@ -107,12 +107,16 @@ a {
   position: relative;
 }
 
+.form-control-item.form-control-mixed .form-control {
+  width: calc(100% - 1px);
+}
+
 .form-control-item.form-control-mixed.after .form-control {
   padding-right: 80px;
 }
 
 .form-control-item.form-control-mixed.after .form-control-append {
-  right: -1px;
+  right: 0;
 }
 
 .form-control-item.form-control-mixed.after .form-control-append .button {
@@ -120,15 +124,16 @@ a {
   border-bottom-left-radius: 0;
 }
 
-.form-control-item.form-control-mixed.before .form-control {
+.form-control-item.before .form-control {
   padding-left: 80px;
+  margin-left: 1px;
 }
 
-.form-control-item.form-control-mixed.before .form-control-append {
-  left: -1px;
+.form-control-item.before .form-control-append {
+  left: 0;
 }
 
-.form-control-item.form-control-mixed.before .form-control-append .button {
+.form-control-item.before .form-control-append .button {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
