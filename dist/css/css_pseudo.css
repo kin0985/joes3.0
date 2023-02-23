@@ -19,6 +19,24 @@ a {
   text-decoration: none;
 }
 
+.slogan {
+  font-size: 24px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.slogan::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: calc(50% - 140px);
+  width: 0;
+  height: 3px;
+  border-left: solid 100px #1072c2;
+  border-right: solid 180px #fff;
+}
+
 .hover-demo {
   width: 80%;
   height: 100px;
