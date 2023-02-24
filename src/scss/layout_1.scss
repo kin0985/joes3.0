@@ -153,6 +153,20 @@ body {
 }
 
 .flow {
+    margin-top: 50px;
+    position: relative;
+    padding: 20px 0;
+
+    &::after {
+            content: '';
+            border-left: 6px dashed #fff;
+            height: 100%;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
   
 
     .flow-item {
@@ -163,15 +177,6 @@ body {
         padding: 20px 0;
         margin-bottom: 15px;
        
-        
-
-        &::after {
-            content: '';
-            border-left: 5px dashed #fff;
-            height: 100%;
-            position: absolute;
-            z-index: 1;
-        }
 
         &:nth-child(even) {
             .flow-text{
@@ -179,6 +184,7 @@ body {
                 left: unset;
                 margin-right: 72px;
                 margin-left: unset;
+                text-align: right;
             }
         }
     }
@@ -202,4 +208,8 @@ body {
     }
 }
 
-
+.footer {
+    background: #fff;
+    padding: 50px 0;
+    text-align: right;
+}

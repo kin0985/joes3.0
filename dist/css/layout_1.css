@@ -294,6 +294,23 @@ body {
   padding-bottom: 40px;
 }
 
+.flow {
+  margin-top: 50px;
+  position: relative;
+  padding: 20px 0;
+}
+
+.flow::after {
+  content: '';
+  border-left: 6px dashed #fff;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
 .flow .flow-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -309,19 +326,12 @@ body {
   margin-bottom: 15px;
 }
 
-.flow .flow-item::after {
-  content: '';
-  border-left: 5px dashed #fff;
-  height: 100%;
-  position: absolute;
-  z-index: 1;
-}
-
 .flow .flow-item:nth-child(even) .flow-text {
   right: 50%;
   left: unset;
   margin-right: 72px;
   margin-left: unset;
+  text-align: right;
 }
 
 .flow .flow-circle {
@@ -340,5 +350,11 @@ body {
   border-radius: 10px;
   left: 50%;
   margin-left: 72px;
+}
+
+.footer {
+  background: #fff;
+  padding: 50px 0;
+  text-align: right;
 }
 /*# sourceMappingURL=layout_1.css.map */
