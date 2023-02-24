@@ -306,6 +306,7 @@ body {
           align-items: center;
   position: relative;
   padding: 20px 0;
+  margin-bottom: 15px;
 }
 
 .flow .flow-item::after {
@@ -314,6 +315,13 @@ body {
   height: 100%;
   position: absolute;
   z-index: 1;
+}
+
+.flow .flow-item:nth-child(even) .flow-text {
+  right: 50%;
+  left: unset;
+  margin-right: 72px;
+  margin-left: unset;
 }
 
 .flow .flow-circle {
