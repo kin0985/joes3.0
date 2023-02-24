@@ -1,0 +1,179 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.slogan {
+  font-size: 24px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.slogan::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: calc(50% - 140px);
+  width: 0;
+  height: 3px;
+  border-left: solid 100px #1072c2;
+  border-right: solid 180px #fff;
+}
+
+.form-control {
+  width: 100%;
+  height: 36px;
+  border: 0;
+  outline: 0;
+  padding: 0 15px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.form-control:focus {
+  background: #adc5ec;
+  color: #fff;
+}
+
+.form-control:focus::-webkit-input-placeholder {
+  color: #aaa6a6;
+}
+
+.form-control:focus:-ms-input-placeholder {
+  color: #aaa6a6;
+}
+
+.form-control:focus::-ms-input-placeholder {
+  color: #aaa6a6;
+}
+
+.form-control:focus::placeholder {
+  color: #aaa6a6;
+}
+
+.button {
+  padding: 8px 20px;
+  border: 0;
+  border-radius: 8px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.button.primary {
+  background: #5466db;
+  color: #fff;
+}
+
+.button.primary:hover {
+  background-color: #374392;
+}
+
+.button.danger {
+  background: #eb2204;
+  color: #fff;
+}
+
+.button.danger:hover {
+  background-color: #9a1b07;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.form-control-item {
+  margin-bottom: 15px;
+}
+
+.form-control-item.form-control-mixed {
+  position: relative;
+}
+
+.form-control-item.form-control-mixed .form-control {
+  width: calc(100% - 1px);
+}
+
+.form-control-item.form-control-mixed.after .form-control {
+  padding-right: 80px;
+}
+
+.form-control-item.form-control-mixed.after .form-control-append {
+  right: 0;
+}
+
+.form-control-item.form-control-mixed.after .form-control-append .button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-control-item.before .form-control {
+  padding-left: 80px;
+  margin-left: 1px;
+}
+
+.form-control-item.before .form-control-append {
+  left: 0;
+}
+
+.form-control-item.before .form-control-append .button {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.form-control-append {
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+
+.form-control-append .button {
+  height: 100%;
+  display: inline-block;
+}
+
+.wrap {
+  margin-top: 20px;
+}
+
+.rotate {
+  width: 100px;
+  height: 100px;
+  background: red;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rotate .rotate-text {
+  font-size: 40px;
+  font-weight: 800;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+/*# sourceMappingURL=transform.css.map */
