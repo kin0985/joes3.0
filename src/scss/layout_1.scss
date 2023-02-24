@@ -124,9 +124,9 @@ body {
     background-image: url(../images/process.jpeg);
     background-size: cover;
     background-position: center center;
-    height: 100vh;
     position: relative;
     z-index: 1;
+    color: #fff;
 
     &::after {
         content: '';
@@ -142,9 +142,28 @@ body {
     .process-wrap {
         position: relative;
         z-index: 2;
+        min-height: 50vh;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
-    .slogan {
-        color: #fff;
+ 
+        
+    
+}
+
+.flow {
+    .flow-item {
+        display: flex;
+        justify-content: center;
+    }
+
+    .flow-circle {
+        width: 36px;
+        height: 36px;
+        border-radius: 50px;
+        background: red;
     }
 }
+
+
