@@ -301,6 +301,19 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 20px 0;
+}
+
+.flow .flow-item::after {
+  content: '';
+  border-left: 5px dashed #fff;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
 }
 
 .flow .flow-circle {
@@ -308,5 +321,16 @@ body {
   height: 36px;
   border-radius: 50px;
   background: red;
+  position: relative;
+  z-index: 2;
+}
+
+.flow .flow-text {
+  position: absolute;
+  background: blue;
+  padding: 20px;
+  border-radius: 10px;
+  left: 50%;
+  margin-left: 72px;
 }
 /*# sourceMappingURL=layout_1.css.map */

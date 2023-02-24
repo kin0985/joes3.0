@@ -156,6 +156,17 @@ body {
     .flow-item {
         display: flex;
         justify-content: center;
+        align-items: center;
+        position: relative;
+        padding: 20px 0;
+
+        &::after {
+            content: '';
+            border-left: 5px dashed #fff;
+            height: 100%;
+            position: absolute;
+            z-index: 1;
+        }
     }
 
     .flow-circle {
@@ -163,6 +174,17 @@ body {
         height: 36px;
         border-radius: 50px;
         background: red;
+        position: relative;
+        z-index: 2;
+    }
+
+    .flow-text {
+        position: absolute;
+        background: blue;
+        padding: 20px;
+        border-radius: 10px;
+        left: 50%;
+        margin-left: 72px;
     }
 }
 
