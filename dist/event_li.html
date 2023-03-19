@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,*::after,*::before {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #menu {
+            margin: 20px;
+        }
+
+        #menu li {
+            padding: 10px;
+            display: block;
+            background: #dedede;
+            margin-bottom: 10px;
+            transition:0.3s;
+        }
+
+        #menu li:hover {
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <ul id="menu">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+
+    <button id="add-btn">add li</button>
+    <a href="#" id="link">TOP</a>
+</body>
+<script>
+    let link = document.querySelector('#link');
+
+    link.addEventListener('click', function(e){
+        e.stopPropagation();
+        e.preventDefault();
+        console.log(123);
+    });
+
+    let menu = document.querySelector('#menu');
+
+    let body = document.querySelector('body');
+
+    body.addEventListener('click', function(e) {
+        console.log('From body');
+        console.log(e.target);
+    })
+
+    menu.addEventListener('click', function(e) {
+        e.stopPropagation();
+        let li = e.target;
+
+        if (li.tagName.toUpperCase() == 'LI') {
+            console.log(li.innerHTML);
+        }
+    });
+
+    let addBtn = document.querySelector('#add-btn');
+
+    addBtn.addEventListener('click', function() {
+        let li = document.createElement('li');
+        li.innerHTML = 'new li';
+        menu.appendChild(li);
+    })
+
+    // let timer = setTimeout(function() {
+    //     console.log('Run after 5s');
+    //     }, 5000)
+    //  console.log(timer);
+
+    //  clearTimeout(timer);
+
+    setTimeout(function(){
+        console.log('Run after 5s');
+    }, 5000);
+    
+    setTimeout(function () {
+         console.log('Run after 5s');
+    }, 5000);
+    
+    setTimeout(function () {
+         console.log('Run after 5s');
+    }, 5000);
+    
+    let timer = setInterval(function(){
+        console.log('run is loop');
+    }, 1000);
+
+    console.log(timer);
+    
+</script>
+</html>
