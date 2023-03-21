@@ -69,7 +69,7 @@ function genLi(text, status) {
                  <div>
                     <a href="#" class="delete">刪除</a>
                 </div>
-                <li>`;
+                </li>`;
 }
 saveBtn.addEventListener('click', function() {
     database.save();
