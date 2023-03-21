@@ -60,8 +60,7 @@ function addItem(text) {
     domText.innerHTML = text;
 
     status.appendChild(statusCheckbox);
-
-    li.append(status);
+    li.appendChild(status);
     li.appendChild(domText);
 
     domItemList.appendChild(li);
