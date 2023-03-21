@@ -1,10 +1,11 @@
 let domItem = document.querySelector('#item');
 let addBtn = document.querySelector('#add-btn');
 let saveBtn = document.querySelector('#save-btn');
+let autoSaveSwitch = document.querySelector('#auto-save-switch');
 
 let database = {
     schema: '',
-    isAutoSave: true,
+    isAutoSave: false,
     data: [],
     insert: function(text) {
         database.data.push({
@@ -32,6 +33,7 @@ let database = {
     delete: function(index) {
         database.data.splice(index, 1);
         database.autoSave();
+
     },
     autoSave() {
         if (database.isAutoSave) {
@@ -71,6 +73,11 @@ function genLi(text, status) {
                 </div>
                 </li>`;
 }
+
+autoSaveSwitch.addEventListener('click',function() {
+    database.isAutoSave = autoSaveSwitch.checked;
+});
+
 saveBtn.addEventListener('click', function() {
     database.save();
     alert('已儲存');
