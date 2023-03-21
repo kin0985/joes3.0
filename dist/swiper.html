@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper</title>
+    <style>
+        *,*::after,*::before {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .swiper {
+            width: 800px;
+            height: 200px;
+            margin: auto;
+            background: #dedede;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .swiper .swiper-container {
+            position: absolute;
+            min-width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+        }
+
+        .swiper .item {
+            width: 200px;
+            margin-right: 20px;
+            height: 200px;
+            background: yellow;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="swiper">
+        <div class="swiper-container">
+            <div class="class item">2</div>
+            <div class="class item">3</div>
+            <div class="class item">4</div>
+            <div class="class item">5</div>
+            <div class="class item">6</div>
+            <div class="class item">7</div>
+            <div class="class item">8</div>
+            <div class="class item">9</div>
+            <div class="class item">10</div>
+        </div>
+    </div>
+</body>
+
+<script>
+    let sc = document.querySelector('.swiper-container');
+    sc.style.width = `${220 *10}px`;
+
+    animate();
+    function animate() {
+        sc.style.left = 0;
+        let width = sc.style.width.replace('px', '');
+        for (let i = 0; i < width; i++) {
+            setTimeout(()=> {
+                sc.style.left = `${i * -1}px`;
+            }, 10 * i)
+        }
+        
+    }
+</script>
+</html>
