@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax 01</title>
+</head>
+<body>
+    <button id="btn">AJAX</button>
+    <div id="response"></div>
+</body>
+    <script>
+        let btn = document.querySelector('#btn');
+        let respnse = document.querySelector('#response');
+
+        btn.addEventListener('click', doAjax);
+
+        function doAjax() {
+            let request = new XMLHttpRequest();
+        
+            request.addEventListener('load',function() {
+                response.innerHTML = request.responseText;
+            });
+
+            request.open('GET', 'https://book.niceinfos.com/frontend/api/?action=demo')
+            request.send();
+        }
+    </script>
+</html>
