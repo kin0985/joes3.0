@@ -43,6 +43,7 @@
 <body>
     <div class="swiper">
         <div class="swiper-container">
+            <div class="class item">1</div>
             <div class="class item">2</div>
             <div class="class item">3</div>
             <div class="class item">4</div>
@@ -52,24 +53,31 @@
             <div class="class item">8</div>
             <div class="class item">9</div>
             <div class="class item">10</div>
+            <div class="class item">1</div>
+            <div class="class item">2</div>
+            <div class="class item">3</div>
+            <div class="class item">4</div>
         </div>
     </div>
 </body>
 
 <script>
     let sc = document.querySelector('.swiper-container');
-    sc.style.width = `${220 *10}px`;
+    sc.style.width = `${220 * 15}px`;
 
     animate();
     function animate() {
         sc.style.left = 0;
-        let width = sc.style.width.replace('px', '');
+        let width = sc.style.width.replace('px', '') - 200 * 5 - 60;
         for (let i = 0; i < width; i++) {
             setTimeout(()=> {
                 sc.style.left = `${i * -1}px`;
-            }, 10 * i)
+            }, 5 * i)
         }
-        
     }
+
+    setInterval(() => {
+        animate()
+    }, 5 * `${220 * 10 + 60}`)
 </script>
 </html>
