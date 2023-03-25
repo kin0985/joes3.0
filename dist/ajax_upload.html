@@ -8,10 +8,76 @@
 </head>
 <body>
     <form action="https://book.niceinfos.com/frontend/api/" method="post" enctype="multipart/form-data">
-        <input type="file" name="file">
+        <input type="file" name="file" id="upload-file" multiple>
         <input type="hidden" name="action" value="upload">
         <button>Upload</button>
-        <button type="button">AJAX Upload</button>
+        <button id="upload-btn">AJAX Upload</button>
     </form>
 </body>
+<script>
+    let uploadBtn = document.querySelector('#upload-btn');
+    let uploadFile = document.querySelector('#upload-file');
+
+    uploadBtn.addEventListener('click', function(e){
+        e.preventDefault();
+
+        let files = uploadFile.files;
+        
+        let len = files.length;
+
+        for(let i = 0; i < len; i++){
+            let file =files[i];
+            doUpload(file);
+        }
+        
+        // if (!file){
+        //     return;
+        // }
+
+        // let api = 'https://book.niceinfos.com/frontend/api/';
+    
+        // let form = new FormData();
+        // form.append('action','upload');
+        // form.append('file',file);
+
+        // let options = {
+        //     method: 'POST',
+        //     body: form
+        // };
+
+        // fetch(api, options)
+        // .then(function(response) {
+        //     return response.text();
+        // })
+        // .then(function(data){
+        //     console.log(data);
+        // });
+
+    });
+
+    function doUpload(file) {
+        if (!file) {
+            return;
+        }
+        let api = 'https://book.niceinfos.com/frontend/api/';
+
+        let form = new FormData();
+        form.append('action', 'upload');
+        form.append('file', file);
+
+        let options = {
+            method: 'POST',
+            body: form
+        };
+
+        fetch(api, options)
+            .then(function (response) {
+                return response.text();
+            })
+            .then(function (data) {
+                console.log(data);
+            });
+    }
+
+</script>
 </html>
